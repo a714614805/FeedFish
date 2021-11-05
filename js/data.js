@@ -1,12 +1,12 @@
 //分值
 var dataObj = function(){
     this.fruitNum = 0;
-    this.double = 1;//吃到了双倍分数的，桔色果实
+    this.double = 1;// 吃到了双倍分数的，桔色果实
     this.score = 0;
-    this.gameOver = false; //游戏是否结束
+    this.gameOver = false; // 游戏是否结束
     this.alpha = 0;
 }
-//小鱼和mom碰到一起mom分值，恢复
+// 小鱼和mom碰到一起mom分值，恢复
 dataObj.prototype.reset = function(){
     this.fruitNum = 0;
     this.double = 1;
@@ -22,9 +22,9 @@ dataObj.prototype.draw = function(){
     ctx1.textAlign = "center";
  
     
-    //ctx1.fillText("num: "+this.fruitNum,w*0.5,h-50);
-    //ctx1.fillText("double: "+this.double,w*0.5,h-80);
-    //console.log(this.score);
+    // ctx1.fillText("num: "+this.fruitNum,w*0.5,h-50);
+    // ctx1.fillText("double: "+this.double,w*0.5,h-80);
+    // console.log(this.score);
     ctx1.fillText("SCORE: "+this.score,w*0.5,h-80);
 
     if(this.gameOver){
